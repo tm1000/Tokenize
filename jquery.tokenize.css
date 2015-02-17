@@ -63,6 +63,12 @@ div.Tokenize ul.TokensContainer li.TokenSearch
     float: left;
 }
 
+div.Tokenize.Fill ul.TokensContainer li.Token,
+div.Tokenize.Fill ul.TokensContainer li.TokenSearch
+{
+    float: none;
+} 
+
 div.Tokenize ul.TokensContainer li.TokenSearch input
 {
     margin: 0;

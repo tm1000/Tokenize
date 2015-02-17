@@ -473,6 +473,10 @@
             this.resetSearchInput();
             this.dropdownHide();
 
+            if (this.options.maxElements == 1 && this.select.hasClass("Fill")){
+                this.searchToken.hide();
+            }
+
             return true;
 
         },
@@ -493,6 +497,9 @@
             this.resizeSearchInput();
             this.dropdownHide();
 
+            if (this.options.maxElements == 1 && this.select.hasClass("Fill")){
+                this.searchToken.show();
+            }
         },
 
         clear: function(){
